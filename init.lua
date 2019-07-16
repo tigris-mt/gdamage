@@ -6,8 +6,8 @@ gdamage.types = {}
 -- Register a damage type.
 function gdamage.register(type)
 	gdamage.types[type] = true
-	if minetest.get_modpath("armor_monoids") then
-		armor_monoids.register_armor_group(type, 100)
+	if minetest.get_modpath("armor_monoid") then
+		armor_monoid.register_armor_group(type, 100)
 	end
 end
 
