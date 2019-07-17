@@ -12,10 +12,11 @@ function gdamage.register(type)
 end
 
 -- Get a list of default armor groups.
-function gdamage.armor_defaults()
+-- Optionally specify value to return in each.
+function gdamage.armor_defaults(v)
 	local ret = {}
 	for k in pairs(gdamage.types) do
-		ret[k] = 100
+		ret[k] = v or 100
 	end
 	return ret
 end
