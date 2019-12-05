@@ -11,6 +11,9 @@ function gdamage.register(type)
 	end
 end
 
+-- Generic damage type.
+gdamage.register("generic")
+
 -- Get a list of default armor groups.
 -- Optionally specify value to return in each.
 function gdamage.armor_defaults(v)
